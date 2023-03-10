@@ -1,0 +1,54 @@
+$button--radius: 35px;
+
+body {
+  font-family: var(--font-open-sans);
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-family: var(--font-raleway);
+  font-size: 2.25rem;
+}
+
+.container {
+  width: 1352px;
+  margin: 0 auto;
+}
+
+
+.btn {
+  color: $color-white;
+  font-weight: bold;
+  display: inline-block;
+  padding: 16px 65px;
+  border-radius: $button--radius;
+  border: none;
+}
+
+.btn--primary {
+  background-color: $color-primary;
+  border-radius: $button--radius;
+  box-shadow: 3px 10px 14px $color-primary-shadow;
+}
+
+.btn--redish {
+  background-color: $color-redish;
+}
+
+.btn--green {
+  background-color: $color-green;
+}
+
+.btn--large {
+  padding: 22px 155px;
+}
+
+.logo {
+  font-family: $font-family-raleway;
+  font-size: 2rem;
+  font-weight: 300;
+  color: $color-primary;
+}

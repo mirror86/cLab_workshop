@@ -73,4 +73,56 @@
   }
 }
 
+body {
+  font-family: var(--font-open-sans);
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-family: var(--font-raleway);
+  font-size: 2.25rem;
+}
+
+.container {
+  width: 1352px;
+  margin: 0 auto;
+}
+
+.btn {
+  color: #fff;
+  border: none;
+  border-radius: 35px;
+  padding: 16px 65px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.btn--primary {
+  background-color: #08a6e4;
+  border-radius: 35px;
+  box-shadow: 3px 10px 14px #07ace629;
+}
+
+.btn--redish {
+  background-color: #fb3b64;
+}
+
+.btn--green {
+  background-color: #55dfb4;
+}
+
+.btn--large {
+  padding: 22px 155px;
+}
+
+.logo {
+  color: #08a6e4;
+  font-family: Raleway, sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
 /*# sourceMappingURL=index.4d2ee62f.css.map */
