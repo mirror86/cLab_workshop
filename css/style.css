@@ -4,19 +4,7 @@
     padding: 0;
 }
 
-:root {
-    --color-primary: #08a6e4;
-    --color-primary-shadow: rgba(7, 172, 230, 0.16);
-    --color-redish: #fb3b64;
-    --color-green: #55dfb4;
-    --color-black: #000000;
-    --color-grey: #a5a5a5;
-    --color-light-grey: #f7f7f7;
-    --color-white: #ffffff;
-    --button-radius: 35px;
-    --font-family-raleway: "Raleway", sans-serif;
-    --font-family-sans: "Open Sans", sans-serif;
-}
+
 
 body {
     font-family: var(--font-family-sans);

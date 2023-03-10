@@ -1,0 +1,38 @@
+$columns: 12;
+$base-column-width: 100% / $columns; // 8.(3)%
+$breakpoint: 960px;
+
+* {
+  box-sizing: border-box;
+}
+
+.container { // CSS: .container
+  width: 100%;
+  max-width: 960px;
+  margin: 20px auto; // Wyśrodkowanie w poziomie
+
+  .row { // CSS: .container .row
+    display: flex;
+    flex-wrap: wrap; // Zepchnięcie do nowej linii
+
+    @for $i from 1 through $columns {
+      .col-#{$i} { // CSS: .container .row .col-1/.col-2...col-12
+        width: $base-column-width * $i;
+      }
+    }
+
+    [class*="col-"] { // CSS: .container .row [class*="col-"]
+      min-height: 1px;
+    }
+
+    @media (max-width: $breakpoint) { // Do szerokości 600px, wszystkie kolumny mają 100%
+      [class*="col-"] {
+        width: 100%;
+      }
+    }
+
+  }
+}
+
+
+
