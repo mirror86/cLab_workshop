@@ -10,15 +10,23 @@ a {
 }
 
 h2 {
-  font-family: var(--font-raleway);
+  font-family: $font-family-raleway;
   font-size: 2.25rem;
+  font-weight: 400;
+}
+
+ul {
+  list-style: none ;
 }
 
 .container {
-  width: 1352px;
+  width: 1124px;
   margin: 0 auto;
+  @include desktop {
+    width: 100%;
+    padding: 0 25px;
+  }
 }
-
 
 
 a {
@@ -62,9 +70,9 @@ section {
 //  background-color: $color-green;
 //}
 //
-//.btn--large {
-//  padding: 22px 155px;
-//}
+.btn--large {
+  padding: 22px 155px;
+}
 
 .logo {
   font-family: $font-family-raleway;

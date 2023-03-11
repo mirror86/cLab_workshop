@@ -1,0 +1,38 @@
+.footer {
+  box-shadow: 0 -5px 40px #00000029;
+  padding: 20px 0;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include desktop {
+    padding: 0;
+  }
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.footer__info a {
+  text-align: left;
+  font-size: 26px;
+  font-family: $font-family-raleway;
+  font-weight: 300;
+  color: $color-primary;
+}
+
+.footer__info span {
+  font-family: $font-family-sans;
+  font-size: 11px;
+  font-weight: 400;
+  color: $color-grey;
+}
+
+.footer__icons a:first-of-type {
+  margin-right: 20px;
+}

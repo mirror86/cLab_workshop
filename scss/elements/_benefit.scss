@@ -1,0 +1,166 @@
+.benefit {
+  padding: 100px 0;
+  background-color: $color-light-grey;
+}
+
+
+.benefit__container {
+  display: flex;
+  flex-direction: column;
+  gap: 37px;
+}
+
+.benefit__single {
+  height: 370px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: $color-white;
+  border: 1px solid #E8E9ED;
+  border-radius: 5px;
+
+}
+
+.benefit__single__notebook {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  @include mobile {
+    flex-direction: column-reverse;
+  }
+}
+
+.benefit__single__smartphone {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.benefit__single__trumpet {
+  flex: 2 1 auto;
+}
+
+.benefit__text {
+  position: relative;
+  box-sizing: content-box;
+  max-width: 416px;
+  margin: 91px 36px;
+}
+
+.benefit__single__notebook .benefit__text::before {
+  content: "";
+  position: absolute;
+  border-bottom: 4px solid $color-redish;
+  width: 328px;
+  top: 188px;
+}
+
+.benefit__single__smartphone .benefit__text::before {
+  content: "";
+  position: absolute;
+  border-bottom: 4px solid $color-primary;
+  width: 328px;
+  top: 230px;
+}
+
+.benefit__single__trumpet .benefit__text::before {
+  content: "";
+  position: absolute;
+  border-bottom: 4px solid $color-green;
+  width: 328px;
+  top: 230px;
+}
+
+
+.benefit__content {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.benefit__figure {
+  position: relative;
+  width: 100vw;
+}
+
+.benefit__figure img {
+  position: relative;
+  z-index: 2;
+}
+
+.benefit__single__notebook .benefit__figure img {
+  width: 386px;
+  height: auto;
+  margin: 113px 117px 38px 169px;
+  position: relative;
+  z-index: 2;
+}
+
+.benefit__single__notebook .benefit__figure::before {
+  content: "";
+  position: absolute;
+  right: 114px;
+  top: 78px;
+  width: 180px;
+  height: 180px;
+  background-color: $color-redish;
+  border-radius: 35px;
+  transform: rotate(45deg);
+}
+
+.benefit__single__smartphone .benefit__figure img {
+  width: 426px;
+  height: auto;
+  margin: 29px 192px 13px 70px;
+}
+
+.benefit__single__spartphone .benefit__text {
+  margin: 70px 0;
+}
+
+.benefit__single__smartphone .benefit__figure::before {
+  content: "";
+  position: absolute;
+  left: 70px;
+  top: 10px;
+  width: 320px;
+  height: 320px;
+  margin-right: 106px;
+  background-color: $color-primary;
+  border-radius: 50%;
+  transform: rotate(45deg);
+}
+
+
+.benefit__img {
+  position: absolute;
+  width: 386px;
+  height: 219px;
+}
+
+.benefit__picture-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  margin-left: 60px;
+  background-color: $color-green;
+}
+
+.benefit__img-bottom {
+  width: 295px;
+  height: auto;
+  margin: 98px 81px 64px 61px;
+}
+
+.benefit__double {
+  display: flex;
+  justify-content: space-between;
+  @include  mobile {
+    flex-direction: column;
+  }
+}

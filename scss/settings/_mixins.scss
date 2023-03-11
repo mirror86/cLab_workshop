@@ -1,4 +1,4 @@
-@mixin notebook {
+@mixin desktop {
   @media (max-width: 1352px) {
     @content;
   }

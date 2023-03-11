@@ -1,0 +1,133 @@
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 80px 100px 100px;
+  @include mobile {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 0 25px;
+  }
+}
+
+.contact__column {
+  width: 50%;
+  @include mobile {
+    width: 100%;
+  }
+
+  .contact__title {
+    margin-bottom: 22px;
+    font-size: 49px;
+    line-height: 57px;
+  }
+
+  .contact__instructions {
+    margin-bottom: 40px;
+    font-family: $font-family-sans;
+    font-size: 16px;
+    font-weight: 400;
+    color: $color-black;
+  }
+
+  .contact__details {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    font-family: $font-family-sans;
+    font-size: 16px;
+    font-weight: 600;
+    color: $color-grey;
+    @include mobile {
+      flex-direction: column;
+    }
+
+    .contact__image {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      color: $color-grey;
+
+    }
+  }
+
+
+}
+
+
+//Contact form
+.form {
+  display: flex;
+  flex-direction: column;
+  .form__field {
+    display: flex;
+    flex-direction: column;
+
+    .form__label {
+      color: $color-primary;
+      font-size: 11px;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
+
+    .form__input {
+      border: none;
+      border-bottom: 1px solid $color-grey;
+      margin-bottom: 30px;
+    }
+  }
+}
+//Consent
+.form__consent {
+  .form__checkbox {
+    display: flex;
+    cursor: pointer;
+
+    input {
+      display: none;
+      position: absolute;
+      cursor: pointer;
+      opacity: 0;
+      height: 0;
+      width: 0;
+
+    }
+
+    .checkbox {
+      flex-grow: 1;
+      height: 24px;
+      min-width: 24px;
+      margin-right: 10px;
+      border-radius: 4px;
+      background: $color-white 0 0 no-repeat padding-box;
+      border: 1px solid $color-grey;
+      opacity: 1;
+
+    }
+
+    .consent__text {
+      text-align: left;
+      font: normal normal normal 12px/17px Open Sans;
+      letter-spacing: 0;
+      color: $color-grey;
+    }
+  }
+}
+
+.form__checkbox input:checked + .checkbox {
+  background-image: url("../assets/Checkmark.svg");
+  background-position: center;
+}
+
+//Button
+.form {
+  .btn {
+    align-self: flex-end;
+    margin-top: 20px;
+  }
+}
+

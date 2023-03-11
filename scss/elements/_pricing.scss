@@ -1,0 +1,162 @@
+.pricing {
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .pricing__boxes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    @include mobile {
+      flex-direction: column;
+      gap: 54px;
+    }
+
+    .pricing__box {
+      width: 370px;
+      background: $color-white 0 0 no-repeat padding-box;
+      border: 1px solid #FB3B64;
+      border-radius: 18px;
+      flex-direction: column;
+      align-items: center;
+
+      &:nth-of-type(1) {
+        border: 1px solid $color-redish;
+      }
+
+      &:nth-of-type(2) {
+        border: 1px solid $color-primary;
+      }
+
+      &:nth-of-type(3) {
+        border: 1px solid $color-green;
+      }
+
+      .pricing__details {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 34px;
+
+        .pricing__type {
+          margin-top: 34px;
+          font-family: $font-family-raleway;
+          font-size: 20px;
+          line-height: 1px;
+          font-weight: 700;
+          color: $color-black;
+        }
+
+        .pricing__price {
+          margin-top: 25px;
+          font-size: 46px;
+          font-family: $font-family-sans;
+          font-weight: 300;
+
+        }
+
+        .pricing__limited {
+          margin-top: 10px;
+          font-family: $font-family-raleway;
+          font-size: 12px;
+          font-weight: 700;
+          color: #13253B;
+        }
+
+        .pricing__items {
+          margin-top: 69px;
+          margin-bottom: 20px;
+          text-align: center;
+
+        }
+
+      }
+    }
+  }
+}
+
+
+.pricing__item {
+  margin-bottom: 20px;
+  font-family: $font-family-sans;
+  font-size: 14px;
+  font-weight: 400;
+  color: $color-black;
+  @include mobile {
+    margin: 15px 0;
+  }
+}
+
+.pricing__item::before {
+  content: "";
+  width: 11px;
+  height: 11px;
+  display: inline-block;
+  margin-right: 10px;
+  background-image: url('../assets/Ckechmark-1.svg');
+}
+
+
+//Basic Box
+
+.pricing__box--basic {
+  .pricing__price {
+    margin-bottom: 30px;
+    color: $color-redish;
+  }
+
+  .btn {
+    position: relative;
+    bottom: -25px;
+    font-size: 18px;
+    background-color: $color-redish;
+
+  }
+}
+
+
+//Box Proffesional
+
+.pricing__box--proffesional {
+  width: 400px;
+  margin: 0 40px;
+  box-shadow: 5px 10px 27px #07ACE629;
+
+  .pricing__details {
+    font-size: 21px;
+    margin: 40px 0;
+  }
+.pricing__price {
+  color: $color-primary;
+}
+  .btn {
+    position: relative;
+    bottom: -65px;
+    font-size: 18px;
+    background-color: $color-primary;
+
+  }
+}
+
+
+//Box Premium
+.pricing__box--premium {
+  .pricing__price {
+    margin-bottom: 30px;
+    color: $color-green;
+  }
+
+  .btn {
+    position: relative;
+    bottom: -25px;
+    left: 10px;
+    font-size: 18px;
+    background-color: $color-green;
+  }
+
+}

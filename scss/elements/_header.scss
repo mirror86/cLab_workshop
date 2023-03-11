@@ -13,12 +13,8 @@
     line-height: 70px;
   }
 
-  .logo {
-    @include mobile {
-      padding-left: 25px;
-    }
   }
-}
+
 
 .menu {
 
@@ -65,11 +61,10 @@
     border-bottom: 4px solid transparent;
     transition: color 0.3s;
     @include mobile {
-      padding: 28px 0 22px;
+      padding: 0;
     }
 
   }
-
   .nav__link:hover {
     color: $color-black;
     border-bottom: 4px solid $color-primary;
