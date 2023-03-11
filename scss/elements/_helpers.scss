@@ -1,7 +1,8 @@
 $button--radius: 35px;
 
 body {
-  font-family: var(--font-open-sans);
+  font-family: $font-family-sans;
+  width: 100vw;
 }
 
 a {
@@ -16,6 +17,25 @@ h2 {
 .container {
   width: 1352px;
   margin: 0 auto;
+}
+
+
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-family: var(--font-family-raleway);
+  font-size: 36px;
+  line-height: 42px;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -34,17 +54,17 @@ h2 {
   box-shadow: 3px 10px 14px $color-primary-shadow;
 }
 
-.btn--redish {
-  background-color: $color-redish;
-}
-
-.btn--green {
-  background-color: $color-green;
-}
-
-.btn--large {
-  padding: 22px 155px;
-}
+//.btn--redish {
+//  background-color: $color-redish;
+//}
+//
+//.btn--green {
+//  background-color: $color-green;
+//}
+//
+//.btn--large {
+//  padding: 22px 155px;
+//}
 
 .logo {
   font-family: $font-family-raleway;

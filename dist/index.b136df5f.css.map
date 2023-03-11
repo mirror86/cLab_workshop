@@ -1,0 +1,1 @@
+{"mappings":"AAAA","sources":["Pulpit/cLab_workshop/scss/generic/_reset.scss"],"sourcesContent":["* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n}"],"names":[],"version":3,"file":"index.b136df5f.css.map","sourceRoot":"/__parcel_source_root/"}

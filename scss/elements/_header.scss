@@ -1,0 +1,137 @@
+
+.header {
+  width: 100vw;
+  height: 70px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  margin: 0 auto;
+
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    line-height: 70px;
+  }
+
+  .logo {
+    @include mobile {
+      padding-left: 25px;
+    }
+  }
+}
+
+.menu {
+
+  .header__nav {
+    display: flex;
+    gap: 45px;
+    @include mobile {
+      display: grid;
+      width: 100%;
+      height: min-content;
+      position: absolute;
+      padding: 30px 0 40px 0;
+      top: 70px;
+      left: 0;
+      transform: translateY(-1000%);
+      gap: 14px;
+      background-color: $color-white;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+      line-height: 15px;
+      z-index: 1;
+    }
+
+
+  }
+
+
+  .nav__element {
+    cursor: pointer;
+    height: 100%;
+    list-style: none;
+    @include mobile {
+      padding-left: 25px;
+    }
+  }
+
+  .nav__link {
+    color: $color-grey;
+    font-family: $font-family-sans;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3.28px;
+    padding: 28px 18px 22px;
+    text-align: center;
+    border-bottom: 4px solid transparent;
+    transition: color 0.3s;
+    @include mobile {
+      padding: 28px 0 22px;
+    }
+
+  }
+
+  .nav__link:hover {
+    color: $color-black;
+    border-bottom: 4px solid $color-primary;
+    @include mobile {
+      border-bottom: none;
+    }
+  }
+}
+
+
+.menu__toggle {
+  display: none;
+  @include mobile {
+    margin: 0 30px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bar {
+    width: 35px;
+    height: 3px;
+    margin-bottom: 10px;
+    background-color: $color-primary;
+    border-radius: 15px;
+  }
+
+  .menu__btn {
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+  }
+}
+
+.menu:has(input:checked) > .header__nav {
+  transform: translateY(0);
+  transition: 0.5s all;
+}
+
+input:checked ~ .bar:first-of-type {
+  position: absolute;
+  transform: rotate(45deg);
+}
+input:checked ~ .bar:nth-of-type(2){
+  display:none ;
+}
+
+input:checked ~ .bar:last-of-type {
+  transform: rotate(-45deg);
+}
+
+
+
+
+
