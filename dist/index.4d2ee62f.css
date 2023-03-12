@@ -156,6 +156,7 @@ section {
 
 .header .header__container {
   height: 100%;
+  width: 1352px;
   justify-content: space-between;
   align-items: center;
   line-height: 70px;
@@ -468,6 +469,12 @@ input:checked ~ .bar:last-of-type {
   align-items: flex-end;
   display: flex;
   position: relative;
+}
+
+@media (max-width: 792px) {
+  .benefit__single {
+    height: auto;
+  }
 }
 
 .benefit__single__notebook {
@@ -903,6 +910,7 @@ input:checked ~ .bar:last-of-type {
 }
 
 .footer__container {
+  width: 1352px;
   justify-content: space-between;
   align-items: center;
   display: flex;
